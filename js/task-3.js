@@ -1,21 +1,20 @@
-const ADMIN_PASSWORD = 'jqueryismyjam';
-const input = prompt('Введите пароль');
-let message;
-switch (input) {
-    case null:
-        message = 'Отменено пользователем!';
-        break;
-    case 'jqueryismyjam':
-        message = 'Добро пожаловать!';
-        break;
-    default:
-        message = 'Доступ запрещен, неверный пароль!';  
-}
-// if (message === null) {
-//     message = 'Отменено пользователем!';
-// } else if (message === ADMIN_PASSWORD) {
-//     message = 'Добро пожаловать!';
-// } else {
-//     message = 'Доступ запрещен, неверный пароль!';
-// }
-alert(message);
+const findLongestWord = function(string) {
+    const array = string.split(' ');
+    let longestWorld = array[0];
+    for (let i = 1; i < array.length; i += 1) {
+        if (longestWorld.length < array[i].length) {
+            longestWorld = array[i];
+        }
+        
+    }
+    return longestWorld;
+};
+
+/*
+ * Вызовы функции для проверки работоспособности твоей реализации.
+ */
+console.log(findLongestWord('The quick brown fox jumped over the lazy dog')); // 'jumped'
+
+console.log(findLongestWord('Google do a roll')); // 'Google'
+
+console.log(findLongestWord('May the force be with you')); // 'force'

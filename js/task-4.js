@@ -1,7 +1,7 @@
-const formatString = function(string) {
+const formatString = function (string) {
     if (string.length > 40) {
         const shortedString = string.slice(0, 40) + '...';
-      return shortedString
+        return shortedString;
     }
     return string;
 };

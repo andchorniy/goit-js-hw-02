@@ -1,4 +1,4 @@
-const findLongestWord = function(string) {
+const findLongestWord = function (string) {
     const array = string.split(' ');
     let longestWorld = array[0];
     for (let i = 1; i < array.length; i += 1) {

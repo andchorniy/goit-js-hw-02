@@ -1,5 +1,5 @@
-const checkForSpam = function(message) {
-  // твой код
+const checkForSpam = function (message) {
+    // твой код
     if (message.toLowerCase().includes('spam') || message.toLowerCase().includes('sale')) {
         return true;
     }

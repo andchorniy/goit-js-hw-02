@@ -26,8 +26,10 @@ const addLogin = function (allLogins, login) {
     if (!isLoginUnique(allLogins, login)) {
         return 'Такой логин уже используется!';
         
-    }
-    return 'Логин успешно добавлен!';
+  }
+  allLogins.push(login);
+  return 'Логин успешно добавлен!';
+  
 };
 
 /*
